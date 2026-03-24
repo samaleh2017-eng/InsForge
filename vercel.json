@@ -1,0 +1,13 @@
+{
+  "buildCommand": "npm run build:shared-schemas && npm run build:ui && npm run build:frontend",
+  "outputDirectory": "dist/frontend",
+  "rewrites": [
+    {
+      "source": "/:path*",
+      "destination": "/index.html"
+    }
+  ],
+  "env": {
+    "VITE_PUBLIC_POSTHOG_KEY": "@VITE_PUBLIC_POSTHOG_KEY"
+  }
+}
