@@ -1,5 +1,7 @@
 {
-  "buildCommand": "npm ci --workspaces && npm run build:vercel",
+  "rootDirectory": ".",
+  "installCommand": "npm install",
+  "buildCommand": "npm run build:shared-schemas && npm run build:ui && npm run build:frontend",
   "outputDirectory": "dist/frontend",
   "rewrites": [
     {
