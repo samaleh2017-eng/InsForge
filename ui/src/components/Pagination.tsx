@@ -122,7 +122,7 @@ export function Pagination({
               </span>
               <Select
                 value={String(pageSize)}
-                onValueChange={(value) => onPageSizeChange(Number(value))}
+                onValueChange={(value: string) => onPageSizeChange(Number(value))}
               >
                 <SelectTrigger className="h-7 w-[70px] text-[13px]">
                   <SelectValue />
