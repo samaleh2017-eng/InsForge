@@ -1,5 +1,5 @@
 {
-  "buildCommand": "npm run build:shared-schemas && npm run build:ui && npm run build:frontend",
+  "buildCommand": "npm run build:vercel",
   "outputDirectory": "dist/frontend",
   "rewrites": [
     {
